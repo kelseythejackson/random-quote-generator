@@ -14,43 +14,31 @@ quotes = [
     {
         quote: 'Everything negative - pressure, challenges - is all an opportunity for me to rise.',
         source: 'Kobe Bryant',
-        citation: null,
-        year: null,
         tags: ['Idol', 'Legend', 'Hoops', 'Greatest']
     },
     {
         quote: 'Discipline is doing what you hate to do, but nonetheless doing it like you love it',
         source: 'Mike Tyson',
-        citation: null,
-        year: null,
         tags: ['Iron Mike', 'Boxing']
     },
     {
         quote: 'Champions aren\'t made in the gyms. Champions are made from something they have deep inside them-a desire, a dream, a vision.',
         source: 'Muhammad Ali',
-        citation: null,
-        year: null,
         tags: ['Greatest', 'Boxing', 'Ali']
     },
     {
         quote: 'I think that the good and the great are only separated by the willingness to sacrifice.',
         source: 'Kareem Abdul-Jabbar',
-        citation: null,
-        year: null,
         tags: ['Lakers', 'Legend', 'Showtime']
     },
     {
         quote: 'It\'s not what happens to you, but how you react to it that matters',
         source: 'Epictetus',
-        citation: null,
-        year: null,
         tags: ['stoicism', 'philosophy']
     },
     {
         quote: 'To improve is to change, so to be perfect is to change often.',
         source: 'Sir Winston Churchill',
-        citation: null,
-        year: null,
         tags: ['badass', 'philosophy']
     },
     {
@@ -71,7 +59,6 @@ quotes = [
         quote: 'Later, dudes. S you in your A\'s, don’t wear a C and J all over your B\'s',
         source: 'Charlie Day',
         citation: 'It\'s Always Sunny in Philadelphia',
-        year: null,
         tags: ['Bird Law', 'Kitten Mittens']
     }
 
@@ -129,10 +116,10 @@ function printQuote() {
     // Concatenate the markup to displaye the data from the quotes array
     markup += '<p class="quote">' +  selectedQuote.quote + '</p>';
     markup += '<p class="source">' +  selectedQuote.source;
-    if (selectedQuote.citation !== null){ 
+    if (selectedQuote.citation !== undefined){ 
         markup += '<span class="citation">' +  selectedQuote.citation + '</span>';
     }
-    if (selectedQuote.year !== null) {
+    if (selectedQuote.year !== undefined) {
         markup += '<span class="year">' + selectedQuote.year + '</span>';
     }
     markup += ' </p>';
